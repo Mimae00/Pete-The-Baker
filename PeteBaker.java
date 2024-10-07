@@ -16,10 +16,8 @@ public class PeteBaker {
             if (available.containsKey(key)) {
                 Integer availableValue = available.get(key);
                 Integer total = availableValue / value ;
-                System.out.println("Match found for key: " + key + " available Value " + total);
                 lowestValue.add(total);
             } else {
-                System.out.println("No match found for key: " + key);
                 lowestValue.add(0);
             }
         }
